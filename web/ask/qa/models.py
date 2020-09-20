@@ -26,5 +26,5 @@ class Answer(models.Model):
     added_at = models.DateTimeField()
     question = models.ForeignKey(Question,
             null=False, on_delete=models.CASCADE)
-    author = models.ForeignKey(User)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
 
